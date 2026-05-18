@@ -165,3 +165,64 @@ Built the 22-slide deck. Notes on execution:
 **Open thread:** humor reserved for the user to layer in.
 
 ---
+
+## Turn 5
+
+### User
+
+> Can you produce a presentation version with less dense content on every slide? I only like 6 bullets and 3 sentences at most per slide. Extra diagrams are fine. Make the presentation more concise to allow the audience to read less off the slides and to allow me to tailor the talking points more.
+
+### Claude
+
+Produced a parallel deck, `configuring-ai-coding-agents-concise.pptx`, holding the same 22-slide structure and the same visual identity (palette, brand stripe, badges, monospace pills, dark code blocks) but stripped to presentation density.
+
+**Density rules applied throughout:**
+- ≤ 6 bullets per slide
+- ≤ 3 sentences of prose per slide
+- Extra diagrams encouraged; replaced text with diagrams where possible
+- Descriptions trimmed to single phrases or removed entirely so the speaker has room to talk
+
+**Slide-by-slide changes:**
+
+- **Slide 2 (Agenda):** Removed the framing sentence and the closing summary; pipeline diagram now stands alone.
+- **Slide 3 (llms.txt concept):** Bullets cut from 4 to 3 per side.
+- **Slide 4 (llms.txt anatomy):** Annotations cut from 5 to 3; kept H1, blockquote, sections.
+- **Slide 5 (Publishing):** Replaced four-step list-with-descriptions and a two-paragraph sidebar with **four big numbered cards** (title + short phrase each) and one supporting sentence at the bottom.
+- **Slide 6 (AGENTS.md concept):** Dropped the left descriptive column and "open convention" bullets entirely; reorganized as a **3×2 grid of six section cards** (Setup, Build & test, Code style, Conventions, Architecture, Don't) with one tagline above.
+- **Slide 7 (AGENTS.md example):** Removed the five-question list on the sidebar; kept "A new hire's first day" framing with one sentence.
+- **Slide 8 (AGENTS.md tips):** Each tip's description trimmed to a single short phrase.
+- **Slide 9 (Skills concept):** Dropped the left "What is a Skill?" paragraph and "Think of it as" bullets; kept one tagline above a larger, centered comparison table.
+- **Slide 10 (Skills anatomy):** Trimmed the paragraph below the tree to one sentence.
+- **Slide 11 (Building a Skill):** Step descriptions trimmed to one short phrase each; anti-pattern sidebar compressed (dropped the "Why it fails" sub-list).
+- **Slide 12 (Hooks concept):** Dropped the entire left mechanics column; expanded the use-case set into **five centered cards** with one tagline.
+- **Slide 13 (Hooks lifecycle):** Removed the "USE FOR" column; kept event name + "fires when" as a cleaner two-column lifecycle table.
+- **Slide 14 (Hooks config):** Workflow step descriptions trimmed to one phrase.
+- **Slide 15 (Syllago concept):** Fix-column bullets cut from 5 to 4.
+- **Slide 16 (Syllago four moves):** Each card's description trimmed to one phrase.
+- **Slide 17 (Loadouts):** Removed the descriptive paragraph; stacked-layer visual is more prominent, kit descriptions trimmed.
+- **Slide 18 (Docs-as-Code concept):** Major restructure. Dropped the entire left "Treat docs like code" column with five practices; kept just **four big horizontal stat cards** (Plain text · Versioned · Reviewed · Automated) with one tagline.
+- **Slide 19 (Every file is code):** Dropped the closing dark band; checklist breathes alone with the headline.
+- **Slide 20 (Style Guides concept):** Trimmed left bullets from 4 to 3 and reduced sidebar to one line + one tagline.
+- **Slide 21 (Principles):** Cut from seven principles to **six**, dropped all descriptions; bigger numbered cards, title-only.
+
+**Slides 1 and 22 unchanged** (already at presentation density).
+
+**QA pass:** rendered to PDF, rasterized, visually inspected the rewritten slides — all changes render cleanly; no overflow, no overlaps. Placeholder grep clean.
+
+**Final deliverable:** `configuring-ai-coding-agents-concise.pptx`, 22 slides. Original `configuring-ai-coding-agents.pptx` retained for reference.
+
+---
+
+## Turn 6
+
+### User
+
+> Continue
+
+### Claude
+
+Surfaced the two deliverables from Turn 5 (the concise deck and the updated HISTORY.md) via `present_files`, which hadn't been called at the end of Turn 5. Updated this history file to include the present turn.
+
+Both decks (`configuring-ai-coding-agents.pptx` and `configuring-ai-coding-agents-concise.pptx`) and the running `HISTORY.md` remain available in `/mnt/user-data/outputs/`.
+
+---
